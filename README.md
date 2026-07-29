@@ -22,7 +22,7 @@ Repositório de ensino — Desenvolvimento de Software com IA e Agentes.
 | 07 | Prompt Engineering (técnicas, system prompt, few-shot) |
 | 08 | Agentes de IA (ReAct, tools, function calling) |
 | 09 | Usando IA no Código (gerar, revisar, refatorar) |
-| 10 | Projeto Final |
+| 10 | Projeto Final — SGB (Laravel, Inertia, React, API, Moodle) |
 
 ## Projetos Práticos
 
@@ -31,7 +31,7 @@ Repositório de ensino — Desenvolvimento de Software com IA e Agentes.
 | 01 — Calculadora Inteligente | Calculadora + LLM para explicar passos |
 | 02 — Chatbot Simples | Interface de chat com API LLM |
 | 03 — Gerenciador de Tarefas | CRUD + agente de sugestões |
-| 04 — Projeto Final | Aplicação completa com IA |
+| 04 — SGB — Agilizando o Futuro | Laravel + Inertia + React + API + integração Moodle |
 
 ## Agentes opencode
 
@@ -40,13 +40,15 @@ Este repositório usa o [opencode](https://opencode.ai) com agentes configurados
 | Agente | Função | Quando usar |
 |--------|--------|-------------|
 | `professor` | Explica conceitos de forma didática | Aprender algo novo |
-| `tutor-js` | Ajuda com JavaScript, HTML, CSS, DOM | Implementar/debugar |
+| `tutor-js` | Ajuda com JavaScript, React, HTML, CSS | Implementar/debugar |
+| `tutor-laravel` | Ajuda com Laravel, Eloquent, Inertia, Sanctum, filas, testes | Desenvolver o backend |
 | `tutor-ia` | Auxilia com prompts, APIs LLM, agentes | Integrar IA |
 | `revisor` | Revisa código e sugere melhorias | Antes de entregar |
 
 ```bash
 opencode "professor" "Explique o que é um LLM"
 opencode "tutor-js" "Como usar flexbox para centralizar um elemento?"
+opencode "tutor-laravel" "Como criar uma migration com relacionamento belongsTo?"
 opencode "revisor" "Revise meu código: ..."
 ```
 
@@ -58,7 +60,8 @@ agile-team-three/
 ├── aulas/                  ← 10 aulas com teoria + prática
 ├── projetos/               ← 4 projetos com especificações
 ├── guias/                  ← Como usar agentes + boas práticas
-└── exercicios/             ← Desafios de prompt + padrões de agentes
+├── exercicios/             ← Desafios de prompt + padrões de agentes
+└── respostas/              ← Gabaritos do professor (ignorado pelo git)
 ```
 
 ## Pré-requisitos
@@ -67,6 +70,8 @@ agile-team-three/
 - VS Code com extensões recomendadas
 - Git e conta no GitHub
 - Node.js (via nvm)
+- PHP 8.3+ e Composer
+- PostgreSQL
 - Docker
 - opencode CLI
 
