@@ -84,3 +84,21 @@
 ```bash
 opencode "professor" "Explique como aplicar Scrum em um projeto individual de estudos"
 ```
+
+## Entrega
+
+```bash
+# 1. Crie sua branch
+git checkout -b aluno/seu-nome
+
+# 2. Salve o print ou link do seu quadro
+mkdir -p alunos/seu-nome/aulas/04-ageis
+# Adicione: kanban.png (print) ou link.md com URL do Trello
+
+# 3. Commit e push
+git add alunos/seu-nome/
+git commit -m "feat: aula 04 - metodologias ágeis"
+git push -u origin aluno/seu-nome
+
+# 4. Abra um Pull Request no GitHub para entregar
+```

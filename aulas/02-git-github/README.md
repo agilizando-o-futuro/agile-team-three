@@ -77,3 +77,21 @@ Publique sites estáticos gratuitamente:
 3. Crie `index.html` com "Olá, Turma 3!"
 4. Commit e push
 5. Ative o GitHub Pages e acesse o site
+
+## Entrega
+
+```bash
+# 1. Crie sua branch
+git checkout -b aluno/seu-nome
+
+# 2. Crie sua pasta com o conteúdo da atividade
+mkdir -p alunos/seu-nome/aulas/02-git
+# Adicione o link do seu site no GitHub Pages em um arquivo link.md
+
+# 3. Commit e push
+git add alunos/seu-nome/
+git commit -m "feat: aula 02 - git e github"
+git push -u origin aluno/seu-nome
+
+# 4. Abra um Pull Request no GitHub para entregar
+```

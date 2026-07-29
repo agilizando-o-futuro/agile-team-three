@@ -68,3 +68,24 @@ opencode "tutor-ia" "Como estruturar a integração com a API REST do Moodle par
 # Revisão
 opencode "revisor" "Revise minha migration e aponte melhorias"
 ```
+
+## Entrega do Projeto Final
+
+```bash
+# 1. Crie sua branch
+git checkout -b aluno/seu-nome/sgb
+
+# 2. Desenvolva o projeto dentro da sua pasta
+mkdir -p alunos/seu-nome/projetos/sgb
+# Crie toda a estrutura do Laravel + Inertia + React aqui
+
+# 3. Commits parciais (um por funcionalidade)
+git add alunos/seu-nome/projetos/sgb/
+git commit -m "feat: [sgb] formulário de inscrição"
+git commit -m "feat: [sgb] integração com Moodle"
+git commit -m "feat: [sgb] painel do aluno"
+
+# 4. Push e PR final
+git push -u origin aluno/seu-nome/sgb
+# Abra o Pull Request no GitHub para entrega final
+```

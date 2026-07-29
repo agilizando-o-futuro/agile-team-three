@@ -36,3 +36,21 @@ Depois, converse com o `tutor-ia` para entender como usar uma API de LLM:
 ```bash
 opencode "tutor-ia" "Como faço uma requisição para a API da OpenAI em JavaScript?"
 ```
+
+## Entrega
+
+```bash
+# 1. Crie sua branch
+git checkout -b aluno/seu-nome
+
+# 2. Salve o resumo da conversa
+mkdir -p alunos/seu-nome/aulas/06-ia-dev
+# Adicione: resumo.md com suas descobertas sobre LLMs
+
+# 3. Commit e push
+git add alunos/seu-nome/
+git commit -m "feat: aula 06 - introdução à IA"
+git push -u origin aluno/seu-nome
+
+# 4. Abra um Pull Request no GitHub para entregar
+```

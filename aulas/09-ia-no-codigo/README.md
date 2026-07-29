@@ -46,3 +46,21 @@ opencode "tutor-js" "Implemente a spec acima"
 
 opencode "revisor" "Revise este código: [cole o código]"
 ```
+
+## Entrega
+
+```bash
+# 1. Crie sua branch
+git checkout -b aluno/seu-nome
+
+# 2. Salve os arquivos do projeto
+mkdir -p alunos/seu-nome/aulas/09-ia-codigo
+# Adicione: spec.md, index.html, style.css, script.js, revisao.md
+
+# 3. Commit e push
+git add alunos/seu-nome/
+git commit -m "feat: aula 09 - IA no código"
+git push -u origin aluno/seu-nome
+
+# 4. Abra um Pull Request no GitHub para entregar
+```

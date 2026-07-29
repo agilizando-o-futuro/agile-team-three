@@ -215,8 +215,27 @@ opencode "professor" "Por que o problema da mochila é importante para sistemas 
 1. Escreva no papel o algoritmo para trocar um pneu furado
 2. Desenhe o fluxograma de uma calculadora de média escolar
 3. Implemente em JavaScript: receba 3 notas, calcule a média, exiba "Aprovado" (≥7), "Recuperação" (≥5), "Reprovado"
-4. Teste com diferentes valores
+4. Implemente o problema da mochila proposto nesta aula
+5. Teste com diferentes valores
 
 ```bash
 opencode "tutor-js" "Me ajude a implementar uma função que valida se uma string é palíndromo em JavaScript"
+```
+
+## Entrega
+
+```bash
+# 1. Crie sua branch
+git checkout -b aluno/seu-nome
+
+# 2. Salve os arquivos na sua pasta
+mkdir -p alunos/seu-nome/aulas/05-logica
+# Adicione: media.js, mochila.js, fluxograma.png (ou link)
+
+# 3. Commit e push
+git add alunos/seu-nome/
+git commit -m "feat: aula 05 - raciocínio lógico"
+git push -u origin aluno/seu-nome
+
+# 4. Abra um Pull Request no GitHub para entregar
 ```

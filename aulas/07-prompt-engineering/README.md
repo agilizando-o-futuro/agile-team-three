@@ -43,3 +43,21 @@ Defina um papel para o modelo: "Você é um revisor de código sênior..."
 ```bash
 opencode "tutor-ia" "Me ajude a criar um prompt para gerar uma calculadora em HTML/CSS/JS. Quero saída em arquivos separados."
 ```
+
+## Entrega
+
+```bash
+# 1. Crie sua branch
+git checkout -b aluno/seu-nome
+
+# 2. Salve os prompts que você criou
+mkdir -p alunos/seu-nome/aulas/07-prompts
+# Adicione: prompt-vago.txt, prompt-especifico.txt, system-prompt.txt
+
+# 3. Commit e push
+git add alunos/seu-nome/
+git commit -m "feat: aula 07 - prompt engineering"
+git push -u origin aluno/seu-nome
+
+# 4. Abra um Pull Request no GitHub para entregar
+```

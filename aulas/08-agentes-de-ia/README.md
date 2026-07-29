@@ -63,3 +63,21 @@ opencode "professor" "Explique o padrão ReAct com uma analogia simples"
 ```
 
 Depois, desenhe no papel o fluxo de um agente que responde perguntas sobre o clima (precisa de uma tool de busca e uma de localização).
+
+## Entrega
+
+```bash
+# 1. Crie sua branch
+git checkout -b aluno/seu-nome
+
+# 2. Salve os arquivos da atividade
+mkdir -p alunos/seu-nome/aulas/08-agentes
+# Adicione: fluxo-agente-clima.jpg|png (foto do desenho)
+
+# 3. Commit e push
+git add alunos/seu-nome/
+git commit -m "feat: aula 08 - agentes de IA"
+git push -u origin aluno/seu-nome
+
+# 4. Abra um Pull Request no GitHub para entregar
+```

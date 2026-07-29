@@ -90,3 +90,21 @@ npm --version
 3. Instale VS Code e abra a pasta com `code .`
 4. Rode `docker run hello-world`
 5. Instale Node.js e rode `node -e "console.log('Hello Turma 3!')"`
+
+## Entrega
+
+```bash
+# 1. Crie sua branch
+git checkout -b aluno/seu-nome
+
+# 2. Crie sua pasta e salve os arquivos da atividade
+mkdir -p alunos/seu-nome/aulas/01-setup
+# Crie um arquivo setup.md com os comandos que você executou
+
+# 3. Commit e push
+git add alunos/seu-nome/
+git commit -m "feat: aula 01 - setup do ambiente"
+git push -u origin aluno/seu-nome
+
+# 4. Abra um Pull Request no GitHub para entregar
+```
