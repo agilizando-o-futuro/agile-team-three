@@ -57,10 +57,11 @@ opencode "revisor" "Revise meu código: ..."
 ```
 agile-team-three/
 ├── .opencode/agents.json   ← Configuração dos agentes
-├── aulas/                  ← 10 aulas com teoria + prática
-├── projetos/               ← 4 projetos com especificações
-├── guias/                  ← Como usar agentes + boas práticas
-├── exercicios/             ← Desafios de prompt + padrões de agentes
+├── aulas/                  ← 10 aulas com teoria + prática (consulta)
+├── projetos/               ← 4 projetos com especificações (consulta)
+├── guias/                  ← Como usar agentes + boas práticas (consulta)
+├── exercicios/             ← Desafios de prompt + padrões de agentes (consulta)
+├── alunos/                 ← Pastas individuais dos alunos (via PR)
 └── respostas/              ← Gabaritos do professor (ignorado pelo git)
 ```
 
@@ -75,10 +76,46 @@ agile-team-three/
 - Docker
 - opencode CLI
 
-## Como Começar
+## Como Começar (Alunos)
 
 ```bash
+# 1. Clonar o repositório
 git clone <url-do-repositorio>
 cd agile-team-three
-opencode "professor" "Por onde devo começar?"
+
+# 2. Criar sua branch de trabalho
+git checkout -b aluno/seu-nome
+
+# 3. Criar sua pasta pessoal
+mkdir -p alunos/seu-nome/exercicios
+mkdir -p alunos/seu-nome/projetos
+
+# 4. Resolver os exercícios dentro da sua pasta
+#    (consultar aulas/, projetos/, guias/ como referência)
+
+# 5. Commitar e enviar
+git add alunos/seu-nome/
+git commit -m "feat: exercício XX - descrição"
+git push -u origin aluno/seu-nome
+
+# 6. Abrir Pull Request no GitHub para a branch main
+#    → Professor revisa e aprova
+```
+
+## Fluxo de Trabalho em Equipe
+
+```
+alunos/joao-santos/     ← Branch: aluno/joao-santos → PR → main
+alunos/maria-silva/     ← Branch: aluno/maria-silva → PR → main
+alunos/pedro-oliveira/  ← Branch: aluno/pedro-oliveira → PR → main
+```
+
+Cada aluno trabalha **apenas dentro da sua pasta** em `alunos/`. O material em `aulas/`, `projetos/`, `guias/` e `exercicios/` é somente para consulta — não deve ser alterado.
+
+```bash
+# Dica: sempre atualizar sua branch antes de começar
+git checkout main
+git pull
+git checkout aluno/seu-nome
+git merge main
 ```
