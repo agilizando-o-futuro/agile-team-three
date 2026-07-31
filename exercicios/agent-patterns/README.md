@@ -27,3 +27,4 @@ Simule dois agentes com opiniões diferentes debatendo um tópico:
 
 ## Entrega
 Publique os experimentos em um repositório GitHub e compartilhe o link.
+s
