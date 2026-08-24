@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Simples - IA</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Biblioteca Marked.js para renderizar Markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Ícones (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar de Configurações -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>⚙️ Configurações</h2>
+            </div>
+            
+            <div class="input-group">
+                <label for="api-key">API Key (OpenAI)</label>
+                <input type="password" id="api-key" placeholder="sk-...">
+            </div>
+
+            <div class="input-group">
+                <label for="model-select">Modelo de IA</label>
+                <select id="model-select">
+                    <option value="gpt-3.5-turbo">GPT-3.5 Turbo (Rápido)</option>
+                    <option value="gpt-4o">GPT-4o (Avançado)</option>
+                    <option value="gpt-4-turbo">GPT-4 Turbo</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="system-prompt">System Prompt (Personalidade)</label>
+                <textarea id="system-prompt" rows="6">Atue como um NPC habitante das ruínas do protocolo Chernobyl-Zeta. Você é cauteloso, mas possui um conhecimento profundo sobre as anomalias locais. Responda de forma imersiva e direta.</textarea>
+            </div>
+
+            <button id="clear-chat-btn" class="btn btn-danger">Limpar Conversa</button>
+        </aside>
+
+        <!-- Área Principal do Chat -->
+        <main class="chat-wrapper">
+            <div class="chat-header">
+                <h1>Assistente Virtual</h1>
+            </div>
+            
+            <div class="chat-history" id="chat-history">
+                <!-- Mensagens aparecerão aqui -->
+                <div class="message system-msg">
+                    <div class="message-content">
+                        Bem-vinda, luna. Insira sua chave de API nas configurações ao lado para iniciar a comunicação.
+                    </div>
+                </div>
+            </div>
+
+            <div class="typing-indicator hidden" id="typing-indicator">
+                <span></span><span></span><span></span>
+            </div>
+
+            <div class="chat-input-area">
+                <textarea id="message-input" placeholder="Digite sua mensagem aqui... (Pressione Enter para enviar)" rows="1"></textarea>
+                <button id="send-btn" title="Enviar Mensagem">
+                    <i data-lucide="send"></i>
+                </button>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
