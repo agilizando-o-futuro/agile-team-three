@@ -1,0 +1,16 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+section {
+    margin: auto;
+    width: 20%;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid black;
+    text-align: center;
+}
+h1,  footer {
+    text-align: center;
+    color: black;
+}
