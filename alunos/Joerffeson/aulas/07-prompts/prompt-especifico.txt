@@ -1,0 +1,16 @@
+### 1. Papel (Role Prompting)
+Atue como um Engenheiro Front-end Sênior e Especialista em UI/UX. Sua missão é projetar e implementar uma calculadora web profissional, moderna, acessível e modular.
+
+### 2. Cadeia de Raciocínio e Planejamento (Cadeia de Dados)
+Antes de gerar o código final, descreva brevemente seu plano de implementação seguindo este fluxo estruturado:
+1. Modelagem de Estado: Como as variáveis de controle (operandoAtual, operandoAnterior, operacaoPendente) serão gerenciadas no JavaScript.
+2. Tratamento de Casos de Borda: Estratégias para divisão por zero, múltiplos pontos decimais consecutivos e limites de tamanho no display.
+3. Acessibilidade e Eventos: Mapeamento de cliques na interface e escuta de eventos de teclado físico (keydown).
+
+### 3. Requisitos Técnicos
+- HTML: Estrutura semântica, meta tags para responsividade e tags de acessibilidade (ARIA labels quando aplicável).
+- CSS: Layout em CSS Grid/Flexbox, design responsivo (mobile e desktop), variáveis CSS para paleta de cores e feedback tátil/visual ao clicar nos botões.
+- JavaScript: Código modular sem variáveis globais soltas, uso de funções puras para os cálculos matemáticos e tratamento defensivo de erros.
+
+### 4. Formato Estrito de Saída
+Entregue a solução completa dividida exclusivamente em 3 blocos de código identificados pelos delimitadores de arquivo abaixo:

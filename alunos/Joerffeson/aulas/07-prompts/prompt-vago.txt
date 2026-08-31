@@ -1,0 +1,21 @@
+Crie um prompt para gerar uma calculadora web em HTML, CSS e JavaScript, com saída em arquivos separados: index.html, style.css e script.js.
+
+Requisitos:
+- A calculadora deve ter interface moderna, intuitiva e responsiva.
+- Deve incluir botões para números de 0 a 9, ponto decimal, operações de soma, subtração, multiplicação, divisão, porcentagem, limpar, apagar último caractere e igual.
+- A tela deve mostrar o cálculo em andamento e o resultado final.
+- Deve funcionar com clique no mouse e também com teclado do computador.
+- O código deve ser organizado, limpo e bem comentado.
+- Deve evitar erros comuns, como divisão por zero, entradas inválidas e múltiplos pontos decimais.
+- A página deve ser visualmente agradável, com layout centralizado, botões clicáveis e contrastes adequados para boa legibilidade.
+- A saída deve ser entregue em três arquivos separados, com HTML chamando o CSS e o JavaScript corretamente.
+- O resultado final deve ser pronto para abrir diretamente no navegador.
+
+Formato da resposta:
+1. Explicação curta do que será gerado.
+2. Código completo do index.html.
+3. Código completo do style.css.
+4. Código completo do script.js.
+
+Importante: use boas práticas de desenvolvimento front-end e mantenha o código funcional e fácil de entender.
+
