@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Minhas Tarefas</h1>
+    </header>
+
+    <form id="todo-form" class="todo-form" novalidate>
+      <label for="todo-input" class="visually-hidden">Nova tarefa</label>
+      <input
+        type="text"
+        id="todo-input"
+        placeholder="O que precisa ser feito?"
+        autocomplete="off"
+        required
+        aria-describedby="todo-error"
+      >
+      <span id="todo-error" class="error-message" aria-live="polite"></span>
+      <button type="submit" class="btn btn-primary">Adicionar</button>
+    </form>
+
+    <div class="filters" role="group" aria-label="Filtrar tarefas">
+      <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">Todas</button>
+      <button type="button" class="filter-btn" data-filter="pending" aria-pressed="false">Pendentes</button>
+      <button type="button" class="filter-btn" data-filter="completed" aria-pressed="false">Concluídas</button>
+    </div>
+
+    <p class="counter" aria-live="polite">
+      <span id="pending-count">0</span> tarefa(s) pendente(s)
+    </p>
+
+    <ul id="todo-list" class="todo-list" role="list" aria-label="Lista de tarefas"></ul>
+
+    <p id="empty-message" class="empty-message hidden">Nenhuma tarefa encontrada.</p>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
