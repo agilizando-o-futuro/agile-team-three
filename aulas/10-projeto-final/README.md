@@ -3,6 +3,9 @@
 ## Objetivo
 Desenvolver o **Sistema de Gestão de Bolsas (SGB)** do projeto social Agilizando o Futuro — uma aplicação completa com Laravel, Inertia, React, API REST, integração com Moodle e app mobile Flutter.
 
+## Scrum no Projeto Final
+O projeto é desenvolvido em sprints. Papéis, roteiro da planning, user stories e a Sprint 1 estão em [scrum/](scrum/README.md).
+
 ## Escopo do Projeto
 
 ### O que vamos construir
